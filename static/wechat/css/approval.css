@@ -1,0 +1,98 @@
+.approvalList{
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0;
+    padding: 10px;
+}
+.approvalList-item{
+	margin-top: 0.4rem;
+    position: relative;
+    padding: 0.3rem 0.2rem 0;
+    font-size: 0.3rem;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 0.2rem;
+    border-radius: 12px;
+}
+.approvalList-item h5{
+	font-size: 0.34rem;
+    font-weight: bold;
+    border-bottom: 1px dashed #c0c0c0;
+    padding-bottom: 0.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.approvalList-item_data{
+    margin: 0.2rem 0 0;
+    padding-bottom: 0.2rem;
+}
+.approvalList-item_data .box {
+    padding: 0 0.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0.34rem;
+}
+.loginBox{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	padding: 0.2rem 0.5rem;
+	width: 5rem;
+	box-sizing: border-box;
+	display: none;
+}
+.loginBox .loginBox-tit{
+	text-align: center;
+	line-height: 1.5;
+	font-size: 0.3rem;
+}
+.loginBox .loginBox-input{
+	display: flex;
+	border: 1px solid #ddd;
+	margin: 0.2rem 0;
+	height: 0.6rem;
+	padding: 0 0.2rem;
+	align-items: center;
+	justify-content: center;
+}
+.loginBox .loginBox-input .label{
+	width: 0.8rem;
+	font-size: 0.2rem;
+}
+.loginBox .loginBox-input input{
+	border: none;
+	flex: 1;
+	display: block;
+	width: 1rem;
+	font-size: 0.2rem;
+	line-height: 1;
+	height: 0.4rem;
+}
+.loginBox .loginBox-input .codeSign{
+	color: #fda7b1;
+    font-size: 0.16rem;
+	cursor: pointer;
+}
+.loginBox .but{
+	text-align: center;
+    border: none;
+    pointer-events: auto;
+    width: 100%;
+    margin: 0.01rem auto 0;
+    display: block;
+    font-size: 0.26rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-radius: 3px;
+    background: #fc586a;
+    color: #fff;
+}

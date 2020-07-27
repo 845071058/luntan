@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.ext.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var PROTOCOL = window.location.protocol
+			var HOSTNAME = window.location.hostname
+			var code = GetQueryString('code')
+			var url = PROTOCOL + '//' + HOSTNAME + ':8002/static/wechat/approvalList.html'
+			$.ajax({
+				url: host + '/tss/AccessTokenService?code=' + code,
+				type: 'get',
+				dataType:'jsonp',
+				jsonpCallback: "callback",
+				success:function(res){
+					// setCookie('userId',res.OpenId)
+					setCookie('userId',res.UserId)
+					window.location.href = url
+				}
+			})
+		</script>
+	</body>
+</html>
