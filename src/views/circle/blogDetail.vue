@@ -292,7 +292,7 @@ export default {
     },
 		addComment(type) {
       if(!this.commentValue) {
-        this.$toast('内容不能为空！');
+       return this.$toast('内容不能为空！');
       }
 			let params = {
 				blogId: this.$route.query.blogId,

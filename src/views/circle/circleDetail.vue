@@ -16,7 +16,7 @@
             v-if="index < 8" alt /></div>
         <div class="circle-addressBook">
           圈内通讯录
-          <van-icon name="arrow" size="14" color="#969799" />
+          <van-icon name="arrow" size="14" color="#333" />
         </div>
       </div>
     </div>
@@ -526,7 +526,7 @@
       },
       addComment(type) {
         if(!this.commentValue) {
-          this.$toast('内容不能为空！');
+         return this.$toast('内容不能为空！');
         }
         let params = {
           blogId: this.commentBlogId,
@@ -760,10 +760,16 @@
 
         .circle-addressBook {
           font-size: 0.28rem;
-          color: #999999;
+          background: #ffc85f;
+          box-shadow: 0 10px 11px -8px #ffc557;
           display: flex;
           align-items: center;
           line-height: 1;
+          height: 0.6rem;
+          border: none;
+          border-radius: 15px;
+          color: #333333;
+          padding: 0 .1rem;
         }
       }
 
